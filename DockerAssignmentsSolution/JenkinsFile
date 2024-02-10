@@ -1,0 +1,46 @@
+stages {
+stage('Build'){
+steps {
+//get some code from GIT HUB repository
+git 'https://github.com/tuser6794/jenkins-assignment-solution.git'
+//Run maven wrappeer commands
+sh "./mvnw compile"
+echo 'Building the project with maven compile '
+}
+}
+stage('Test'){
+steps {
+
+//Run maven wrappeer commands
+sh "./mvnw test"
+echo ' Testing the project with maven test '
+}
+}
+stage('Package'){
+steps {
+
+//Run maven wrappeer commands
+sh "./mvnw package"
+echo 'Packaging the project with maven package'
+}
+}
+stage('containerize'){
+steps {
+
+//Run docker build commands
+sh "docker build -t pet-clinic-image."
+echo 'containerize the app with docker'
+}
+}
+stage('Deploy'){
+steps {
+
+//Run docker build commands
+sh "docker run -d -p 9090:9090 pet-clinic-image"
+echo 'Deploy the app with docker'
+}
+}
+}
+
+
+

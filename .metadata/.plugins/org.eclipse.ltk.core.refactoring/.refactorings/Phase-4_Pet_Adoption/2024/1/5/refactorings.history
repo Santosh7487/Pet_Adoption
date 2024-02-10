@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;DockerFile&apos; to &apos;DockerAssignmentsSolution&apos;&#x0D;&#x0A;- Original project: &apos;Phase-4_Pet_Adoption&apos;&#x0D;&#x0A;- Destination element: &apos;DockerAssignmentsSolution&apos;&#x0D;&#x0A;- Original element: &apos;DockerFile&apos;" description="Copy file" element1="DockerFile" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1706730069111" target="/DockerAssignmentsSolution" units="0" version="1.0"/>
+</session>
